@@ -37,7 +37,6 @@ export default function App() {
 
 
   return (
-    <BrowserRouter basename={basename}>
       <ScrollToTop>
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -64,6 +63,5 @@ export default function App() {
 
         </Routes>
       </ScrollToTop>
-    </BrowserRouter>
   )
 }
