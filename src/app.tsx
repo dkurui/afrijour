@@ -27,7 +27,8 @@ export default function App() {
    *
    * @link https://vitejs.dev/guide/env-and-mode.html
    */
-  const basename = import.meta.env.BASE_URL
+  const basename = "/afrijour"
+    // import.meta.env.BASE_URL
 
 
 
