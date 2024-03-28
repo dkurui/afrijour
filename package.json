@@ -11,21 +11,12 @@
 
    
     "scripts": {
-      "build": "NODE_ENV=production run-s build:*",
-      "build:css": "postcss styles/tailwind.css -o src/assets/styles.css",
-      "build:vite": "vite build",
-      "deploy": "gh-pages -d dist",
-      "dev": "run-p dev:*",
-      "dev:css": "postcss styles/tailwind.css -o src/assets/styles.css --watch",
-      "dev:vite": "vite",
-      "format": "prettier --check .",
-      "lint": "eslint --cache --cache-location ./node_modules/.cache/eslint .",
-      "lint:fix": "eslint . --fix",
-      "predeploy": "$npm_execpath run build",
-      "preview": "vite preview",
-      "start": "$npm_execpath run dev",
-      "typecheck": "tsc --noEmit",
-      "validate": "run-p lint typecheck"
+      "dev": "vite",
+    "build": "NODE_OPTIONS=--max_old_space_size=4096 vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "format": "prettier --check .",
+    "host": "vite --host"
     },
     "dependencies": {
       "@heroicons/react": "^2.1.1",
