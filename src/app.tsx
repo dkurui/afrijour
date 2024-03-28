@@ -27,7 +27,7 @@ export default function App() {
    *
    * @link https://vitejs.dev/guide/env-and-mode.html
    */
-  const basename = "/afrijour"
+  const basename = "."
     // import.meta.env.BASE_URL
 
 
@@ -37,6 +37,7 @@ export default function App() {
 
 
   return (
+    <BrowserRouter basename={basename}>
       <ScrollToTop>
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -63,5 +64,6 @@ export default function App() {
 
         </Routes>
       </ScrollToTop>
+    </BrowserRouter>
   )
 }
