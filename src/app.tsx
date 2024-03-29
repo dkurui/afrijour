@@ -27,7 +27,7 @@ export default function App() {
    *
    * @link https://vitejs.dev/guide/env-and-mode.html
    */
-  const basename = "."
+  const basename = "/"
     // import.meta.env.BASE_URL
 
 
